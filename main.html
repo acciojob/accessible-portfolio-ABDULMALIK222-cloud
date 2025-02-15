@@ -1,11 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
+    <title>Accessible Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- Heading with ARIA role -->
+    <!-- Heading -->
+    <header>
+        <h1 role="heading">Welcome to My Accessible Portfolio</h1>
+    </header>
+
+    <!-- Navigation -->
     <nav role="navigation">
         <ul role="list">
             <li role="listitem"><a href="#about">About Me</a></li>
@@ -14,18 +20,27 @@
         </ul>
     </nav>
 
-    <section>
-        <img src="_luffyacesabo.jpg" alt="A portrait of the portfolio owner" role="img">
-        <p role="document">This is a brief description of my work and accomplishments in the tech industry.</p>
+    <!-- Main Content -->
+    <section id="about">
+        <h2 role="heading">About Me</h2>
+        <img src="profile.jpg" alt="A photo of the portfolio owner" role="img">
+        <p>Hello! I'm an aspiring web developer passionate about creating accessible and user-friendly websites. I specialize in HTML, CSS, and JavaScript.</p>
     </section>
 
-    <section id="projects">
-        <h2 role="heading" >My Projects</h2>
+    <!-- List of Skills -->
+    <section id="skills">
+        <h2 role="heading">My Skills</h2>
         <ul role="list">
-            <li role="listitem">Project One: Web Development</li>
-            <li role="listitem">Project Two: Mobile App</li>
-            <li role="listitem">Project Three: Data Analysis</li>
+            <li role="listitem">HTML & CSS</li>
+            <li role="listitem">JavaScript</li>
+            <li role="listitem">Web Accessibility</li>
         </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 role="heading">Contact</h2>
+        <p>If you'd like to get in touch, feel free to send me an email at <a href="mailto:example@email.com">example@email.com</a>.</p>
     </section>
 
 </body>
